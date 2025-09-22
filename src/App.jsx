@@ -7,6 +7,8 @@ import UserGreeting from "./UserGreeting"
 import List from "./List"
 import Button from "./Button"
 import Profile from "./Profile"
+import MyComponent from "./MyComponent"
+import Countere from "./Countere"
 
 
 function App() {
@@ -34,6 +36,8 @@ const fruits = [
     <Student name = "rupendra" age ="24" isStudent = {true} />
     <Button />
     <Profile />
+    <MyComponent />
+    <Countere />
 
 
      {fruits.length > 0 && <List items={fruits} category="Fruits" />}
