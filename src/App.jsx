@@ -31,8 +31,10 @@ const fruits = [
     <Student name = "Toni" age ="25" isStudent = {true} />
     <Student name = "rupendra" age ="24" isStudent = {true} />
     <Button />
-    <List items={fruits} category="Fruits" />
-    <List items={vegetables} category="Vegetables" />
+
+
+     {fruits.length > 0 && <List items={fruits} category="Fruits" />}
+    {vegetables.length > 0 && <List items={vegetables} category="Vegetables" />}
 
     <UserGreeting isLoggedIn={true} username="Toni" />
     <Footer />

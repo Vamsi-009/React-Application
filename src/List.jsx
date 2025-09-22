@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function List(props){
 
    /* const fruits =[{id:1 ,name :"apple" , calories :95},
@@ -26,8 +28,20 @@ function List(props){
                                         {item.name} : &nbsp;
                                         <b>{item.calories}</b> </li>);
     return(<>
-    <h3>{category}</h3>
-        <ol>{listItems}</ol>
+        <h3 className="list-category">{category}</h3>
+        <ol className="list-items">{listItems}</ol>
     </>);
+}
+
+List.prototype ={
+    category:PropTypes.string,
+    items:PropTypes.arrayOf(PropTypes.shape({id:PropTypes.number,
+                                             name: PropTypes.string,
+                                             category:PropTypes.number
+    }))
+}
+List.defaultProps = {
+    category:" category",
+    items : [],
 }
 export default List
