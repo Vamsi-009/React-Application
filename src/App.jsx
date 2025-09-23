@@ -9,6 +9,7 @@ import Button from "./Button"
 import Profile from "./Profile"
 import MyComponent from "./MyComponent"
 import Countere from "./Countere"
+import EventHandler from "./EventHandler"
 
 
 function App() {
@@ -35,6 +36,7 @@ const fruits = [
     <Student name = "Toni" age ="25" isStudent = {true} />
     <Student name = "rupendra" age ="24" isStudent = {true} />
     <Button />
+    <EventHandler />
     <Profile />
     <MyComponent />
     <Countere />
