@@ -12,6 +12,7 @@ import Countere from "./Countere"
 import EventHandler from "./EventHandler"
 import ColorPicker from "./ColorPicker"
 import CarModel from "./CarModel"
+import Cars from "./Cars"
 
 
 function App() {
@@ -35,6 +36,7 @@ const fruits = [
     <Header />
     <Food /> 
     <Card />
+    <Cars />
     <CarModel />
     <Student name = "Toni" age ="25" isStudent = {true} />
     <Student name = "rupendra" age ="24" isStudent = {true} />
@@ -49,7 +51,7 @@ const fruits = [
      {fruits.length > 0 && <List items={fruits} category="Fruits" />}
     {vegetables.length > 0 && <List items={vegetables} category="Vegetables" />}
 
-    <UserGreeting isLoggedIn={true} username="Toni" />
+    <UserGreeting isLoggedIn={false} username="Toni" />
     <Footer />
 
 
