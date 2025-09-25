@@ -11,6 +11,7 @@ import MyComponent from "./MyComponent"
 import Countere from "./Countere"
 import EventHandler from "./EventHandler"
 import ColorPicker from "./ColorPicker"
+import CarModel from "./CarModel"
 
 
 function App() {
@@ -34,6 +35,7 @@ const fruits = [
     <Header />
     <Food /> 
     <Card />
+    <CarModel />
     <Student name = "Toni" age ="25" isStudent = {true} />
     <Student name = "rupendra" age ="24" isStudent = {true} />
     <Button />
