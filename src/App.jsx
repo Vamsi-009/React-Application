@@ -13,6 +13,8 @@ import EventHandler from "./EventHandler"
 import ColorPicker from "./ColorPicker"
 import CarModel from "./CarModel"
 import Cars from "./Cars"
+import UseEffect from "./UseEffect"
+import ScreenSZ from "./ScreenSZ"
 
 
 function App() {
@@ -35,6 +37,8 @@ const fruits = [
     <>
     <Header />
     <Food /> 
+    <UseEffect />
+    <ScreenSZ />
     <Card />
     <Cars />
     <CarModel />
@@ -51,7 +55,7 @@ const fruits = [
      {fruits.length > 0 && <List items={fruits} category="Fruits" />}
     {vegetables.length > 0 && <List items={vegetables} category="Vegetables" />}
 
-    <UserGreeting isLoggedIn={false} username="Toni" />
+    <UserGreeting isLoggedIn={true} username="Toni" />
     <Footer />
 
 
