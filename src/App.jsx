@@ -15,6 +15,7 @@ import CarModel from "./CarModel"
 import Cars from "./Cars"
 import UseEffect from "./UseEffect"
 import ScreenSZ from "./ScreenSZ"
+import DigitalClock from "./DigitalClock"
 
 
 function App() {
@@ -37,6 +38,7 @@ const fruits = [
     <>
     <Header />
     <Food /> 
+    <DigitalClock />
     <UseEffect />
     <ScreenSZ />
     <Card />
